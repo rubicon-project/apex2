@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+<Ad id="TestAd">
+<InLine>
+<AdSystem>Magnite</AdSystem>
+<AdTitle>VAST 2.0 Linear Ad</AdTitle>
+<Impression>><![CDATA[http://localhost/tracking/impression]]></Impression>
+<Creatives>
+	 <Creative id="2017" AdID="201702072" sequence="1">
+		<Linear>
+			<Duration>00:00:15</Duration>
+			<TrackingEvents>
+				<Tracking event="creativeView"><![CDATA[http://localhost/tracking/creativeView]]></Tracking>
+				<Tracking event="start"><![CDATA[[http://localhost/tracking/start]]></Tracking>
+				<Tracking event="firstQuartile"><![CDATA[[http://localhost/tracking/firstQuartile]]></Tracking>
+				<Tracking event="midpoint"><![CDATA[[http://localhost/tracking/midpoint]]></Tracking>
+				<Tracking event="thirdQuartile"><![CDATA[[http://localhost/tracking/thirdQuartile]]></Tracking>
+				<Tracking event="complete"><![CDATA[[http://localhost/tracking/complete]]></Tracking>
+			</TrackingEvents>
+			<VideoClicks>
+				<ClickThrough><![CDATA[http://www.discovertheforest.org/]]></ClickThrough>
+			</VideoClicks>
+			<MediaFiles>
+			<MediaFile delivery="progressive" bitrate="410" width="640" height="360" type="video/mp4"><![CDATA[/Forest_15_640x360_400.mp4]]></MediaFile>
+			<MediaFile delivery="progressive" bitrate="845" width="640" height="360" type="video/mp4"><![CDATA[/Forest_15_640x360_800.mp4]]></MediaFile>
+		</MediaFiles>
+		</Linear>
+	</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>

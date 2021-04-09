@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apex 2.0 demo page</title>
+    <meta charset="UTF-8">
+    <script src="/apex.js"></script>
+    <style type="text/css">
+	#article { max-width: 1024px; background-color: #EEEEEE; margin: auto; padding: 1em; }
+	.apex-demo { color: #990000; border: 1px solid #990000; padding: 10px; margin: 10px; }
+    #error {background-color: #990000; color: #EEEEEE; margin: 1px}
+    #apexSetup {background-color: #CCCCCC; width: 420px; position: fixed; top: 0; right: 0; padding: 10px; border: 2px solid #666666}
+    #apexConfig {width: 400px; height: 200px}
+    #runApex {font-size: 1.5em; font-weight: bold}
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+function runApex() {
+    document.getElementById('error').innerHTML = '';
+    try {
+        const config = JSON.parse(document.getElementById('apexConfig').value);
+        if (config.createFakeJwplayer) {
+            window.jwplayer = function() {
+                console.error("Customer's JWPlayer should not be called or altered with Magnite Apex!");
+            }
+            delete config.createFakeJwplayer;
+        }
+        MagniteApex.renderAd(config);
+    } catch (e) {
+        document.getElementById('error').innerHTML = `Can not parse config: ${e}`;
+    }
+}
+</script>
+
+<div id="article">
+    <h1>Apex 2.0 demo page</h1>
+
+<div id="apexSetup">
+    <textarea name="apexConfig" id="apexConfig">
+{
+  "apexdebug": true,
+  "placement": {
+    "attachTo": "#apex-demo-top"
+  },
+  "vastUrl": "/testad.xml",
+  "label": "powered by Magnite"
+}
+    </textarea>
+    <div id="error"></div>
+    <button id="runApex" onclick="runApex()">Run Apex</button>
+</div>
+
+    <p>
+The carbon in our apple pies realm of the galaxies rogue vastness is bearable only through love decipherment Drake Equation? Apollonius of Perga emerged into consciousness two ghostly white figures in coveralls and helmets are softly dancing of brilliant syntheses extraordinary claims require extraordinary evidence the ash of stellar alchemy. A still more glorious dawn awaits hearts of the stars kindling the energy hidden in matter citizens of distant epochs made in the interiors of collapsing stars astonishment.
+    </p>
+    <p>
+Apollonius of Perga galaxies the sky calls to us consectetur a very small stage in a vast cosmic arena encyclopaedia galactica. Finite but unbounded something incredible is waiting to be known Flatland made in the interiors of collapsing stars dispassionate extraterrestrial observer the ash of stellar alchemy. Extraordinary claims require extraordinary evidence Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit adipisci velit invent the universe Neque porro quisquam est Ut enim ad minima veniam.
+    </p>
+    <p>
+Corpus callosum Drake Equation Sea of Tranquility not a sunrise but a galaxyrise tingling of the spine the only home we've ever known. Citizens of distant epochs of brilliant syntheses qui dolorem ipsum quia dolor sit amet concept of the number one sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt rich in heavy atoms. Adipisci velit something incredible is waiting to be known vastness is bearable only through love extraordinary claims require extraordinary evidence invent the universe rich in heavy atoms and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+    </p>
+    
+    <div id="apex-demo-top" class="apex-demo">Placement #apex-demo-top</div>
+
+    <p>
+Hearts of the stars a still more glorious dawn awaits two ghostly white figures in coveralls and helmets are softly dancing descended from astronomers circumnavigated tendrils of gossamer clouds. Emerged into consciousness Ut enim ad minima veniam Neque porro quisquam est concept of the number one the only home we've ever known invent the universe. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo the carbon in our apple pies inconspicuous motes of rock and gas sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem vanquish the impossible the sky calls to us.
+    </p>
+    <p>
+Qui dolorem ipsum quia dolor sit amet preserve and cherish that pale blue dot rich in heavy atoms hydrogen atoms realm of the galaxies courage of our questions. Another world the carbon in our apple pies nisi ut aliquid ex ea commodi consequatur bits of moving fluff great turbulent clouds the carbon in our apple pies. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium a very small stage in a vast cosmic arena two ghostly white figures in coveralls and helmets are softly dancing across the centuries sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit?
+    </p>
+
+    <p>
+Vanquish the impossible finite but unbounded quis nostrum exercitationem ullam corporis suscipit laboriosam Flatland something incredible is waiting to be known how far away. The ash of stellar alchemy Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo gathered by gravity muse about Cambrian explosion and billions upon billions upon billions upon billions upon billions upon billions upon billions.   
+    </p>
+
+    <p>
+The carbon in our apple pies realm of the galaxies rogue vastness is bearable only through love decipherment Drake Equation? Apollonius of Perga emerged into consciousness two ghostly white figures in coveralls and helmets are softly dancing of brilliant syntheses extraordinary claims require extraordinary evidence the ash of stellar alchemy. A still more glorious dawn awaits hearts of the stars kindling the energy hidden in matter citizens of distant epochs made in the interiors of collapsing stars astonishment.
+    </p>
+    <p>
+Apollonius of Perga galaxies the sky calls to us consectetur a very small stage in a vast cosmic arena encyclopaedia galactica. Finite but unbounded something incredible is waiting to be known Flatland made in the interiors of collapsing stars dispassionate extraterrestrial observer the ash of stellar alchemy. Extraordinary claims require extraordinary evidence Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit adipisci velit invent the universe Neque porro quisquam est Ut enim ad minima veniam.
+    </p>
+    <p>
+Corpus callosum Drake Equation Sea of Tranquility not a sunrise but a galaxyrise tingling of the spine the only home we've ever known. Citizens of distant epochs of brilliant syntheses qui dolorem ipsum quia dolor sit amet concept of the number one sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt rich in heavy atoms. Adipisci velit something incredible is waiting to be known vastness is bearable only through love extraordinary claims require extraordinary evidence invent the universe rich in heavy atoms and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+    </p>
+
+    <p>
+Hearts of the stars a still more glorious dawn awaits two ghostly white figures in coveralls and helmets are softly dancing descended from astronomers circumnavigated tendrils of gossamer clouds. Emerged into consciousness Ut enim ad minima veniam Neque porro quisquam est concept of the number one the only home we've ever known invent the universe. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo the carbon in our apple pies inconspicuous motes of rock and gas sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem vanquish the impossible the sky calls to us.
+    </p>
+    <p>
+Qui dolorem ipsum quia dolor sit amet preserve and cherish that pale blue dot rich in heavy atoms hydrogen atoms realm of the galaxies courage of our questions. Another world the carbon in our apple pies nisi ut aliquid ex ea commodi consequatur bits of moving fluff great turbulent clouds the carbon in our apple pies. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium a very small stage in a vast cosmic arena two ghostly white figures in coveralls and helmets are softly dancing across the centuries sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit?
+    </p>
+
+    <p>
+Vanquish the impossible finite but unbounded quis nostrum exercitationem ullam corporis suscipit laboriosam Flatland something incredible is waiting to be known how far away. The ash of stellar alchemy Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo gathered by gravity muse about Cambrian explosion and billions upon billions upon billions upon billions upon billions upon billions upon billions.   
+    </p>
+
+    <div id="apex-demo-middle" class="apex-demo">Placement #apex-demo-middle</div>
+
+    <p>
+The carbon in our apple pies realm of the galaxies rogue vastness is bearable only through love decipherment Drake Equation? Apollonius of Perga emerged into consciousness two ghostly white figures in coveralls and helmets are softly dancing of brilliant syntheses extraordinary claims require extraordinary evidence the ash of stellar alchemy. A still more glorious dawn awaits hearts of the stars kindling the energy hidden in matter citizens of distant epochs made in the interiors of collapsing stars astonishment.
+    </p>
+    <p>
+Apollonius of Perga galaxies the sky calls to us consectetur a very small stage in a vast cosmic arena encyclopaedia galactica. Finite but unbounded something incredible is waiting to be known Flatland made in the interiors of collapsing stars dispassionate extraterrestrial observer the ash of stellar alchemy. Extraordinary claims require extraordinary evidence Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit adipisci velit invent the universe Neque porro quisquam est Ut enim ad minima veniam.
+    </p>
+    <p>
+Corpus callosum Drake Equation Sea of Tranquility not a sunrise but a galaxyrise tingling of the spine the only home we've ever known. Citizens of distant epochs of brilliant syntheses qui dolorem ipsum quia dolor sit amet concept of the number one sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt rich in heavy atoms. Adipisci velit something incredible is waiting to be known vastness is bearable only through love extraordinary claims require extraordinary evidence invent the universe rich in heavy atoms and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+    </p>
+
+    <p>
+Hearts of the stars a still more glorious dawn awaits two ghostly white figures in coveralls and helmets are softly dancing descended from astronomers circumnavigated tendrils of gossamer clouds. Emerged into consciousness Ut enim ad minima veniam Neque porro quisquam est concept of the number one the only home we've ever known invent the universe. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo the carbon in our apple pies inconspicuous motes of rock and gas sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem vanquish the impossible the sky calls to us.
+    </p>
+    <p>
+Qui dolorem ipsum quia dolor sit amet preserve and cherish that pale blue dot rich in heavy atoms hydrogen atoms realm of the galaxies courage of our questions. Another world the carbon in our apple pies nisi ut aliquid ex ea commodi consequatur bits of moving fluff great turbulent clouds the carbon in our apple pies. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium a very small stage in a vast cosmic arena two ghostly white figures in coveralls and helmets are softly dancing across the centuries sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit?
+    </p>
+
+    <p>
+Vanquish the impossible finite but unbounded quis nostrum exercitationem ullam corporis suscipit laboriosam Flatland something incredible is waiting to be known how far away. The ash of stellar alchemy Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo gathered by gravity muse about Cambrian explosion and billions upon billions upon billions upon billions upon billions upon billions upon billions.   
+    </p>
+
+    <div id="apex-demo-bottom" class="apex-demo">Placement - #apex-demo-bottom</div>
+
+</div>
+</body>
+</html>
+
+
+
