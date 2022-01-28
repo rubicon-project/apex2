@@ -4,7 +4,7 @@
 <InLine>
 <AdSystem>Magnite</AdSystem>
 <AdTitle>VAST 2.0 Linear Ad</AdTitle>
-<Impression>><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Impression>
+<Impression><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Impression>
 <Creatives>
 	 <Creative id="2017" AdID="201702072" sequence="1">
 		<Linear>
