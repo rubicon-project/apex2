@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+<Ad id="TestAd">
+<InLine>
+<AdSystem>Magnite</AdSystem>
+<AdTitle>VAST 2.0 Linear Ad</AdTitle>
+<Impression>><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Impression>
+<Creatives>
+	 <Creative id="2017" AdID="201702072" sequence="1">
+		<Linear>
+			<Duration>00:00:15</Duration>
+			<TrackingEvents>
+				<Tracking event="creativeView"><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="start"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="firstQuartile"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="midpoint"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="thirdQuartile"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="complete"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+			</TrackingEvents>
+			<VideoClicks>
+				<ClickThrough><![CDATA[http://www.discovertheforest.org/]]></ClickThrough>
+			</VideoClicks>
+			<MediaFiles>
+			<MediaFile delivery="progressive" bitrate="410" width="640" height="360" type="video/mp4"><![CDATA[https://rubicon-project.github.io/apex2/Forest_15_640x360_400.mp4]]></MediaFile>
+			<MediaFile delivery="progressive" bitrate="845" width="640" height="360" type="video/mp4"><![CDATA[https://rubicon-project.github.io/apex2/Forest_15_640x360_800.mp4]]></MediaFile>
+		</MediaFiles>
+		</Linear>
+	</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
