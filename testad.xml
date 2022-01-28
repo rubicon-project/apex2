@@ -11,11 +11,11 @@
 			<Duration>00:00:15</Duration>
 			<TrackingEvents>
 				<Tracking event="creativeView"><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
-				<Tracking event="start"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
-				<Tracking event="firstQuartile"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
-				<Tracking event="midpoint"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
-				<Tracking event="thirdQuartile"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
-				<Tracking event="complete"><![CDATA[[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="start"><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="firstQuartile"><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="midpoint"><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="thirdQuartile"><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
+				<Tracking event="complete"><![CDATA[https://rubicon-project.github.io/apex2/tracking]]></Tracking>
 			</TrackingEvents>
 			<VideoClicks>
 				<ClickThrough><![CDATA[http://www.discovertheforest.org/]]></ClickThrough>
